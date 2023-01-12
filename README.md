@@ -2,13 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In your terminal
+### In your terminal,
 
-1- run command `cd frontend`
+1- run command `git clone https://github.com/Jorsche/CognizantFEInterview.git`
 
-2- run command `npm i`
+2- run command `cd frontend` into frontend folder
 
-3- run command `npm run start`
+3- run command `npm i`
+
+4- run command `npm run start`
 
 ### Taadaaa! You are running the app locally.
 
