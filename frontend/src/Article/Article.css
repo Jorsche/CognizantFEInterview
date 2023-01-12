@@ -1,0 +1,127 @@
+.sectionDiv{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    flex-direction: column-reverse;
+    max-width: 56rem;
+}
+
+.imgWidthFull{
+    width: 100%;
+}
+
+.hero-img {
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.learnMoreButton{
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 0.85rem;
+    /*todo jors check might have prob. maybe its put at learnMoreButton:hover*/
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    cursor: pointer;
+}
+
+.learnMoreButton:focus {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.learnMoreButton:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.article{
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.paragraphText{
+    margin-bottom: 1.25rem;
+    color: rgb(104, 102, 102);
+}
+
+
+.unorderedListPartner{
+    margin-top: 2.5rem;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unorderedListPartner > * + * {
+    margin-left: 1rem;
+}
+
+.partnerImg{
+    width: 3.5rem;
+}
+
+.remoteWorkHeading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+@media(min-width:1280px) {
+    .sectionDiv{
+        max-width: 1200px;
+    }
+    .article{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .remoteWorkHeading{
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+}
+@media(min-width:1024px) {
+    .sectionDiv{
+        max-width: 1024px;
+    }
+    .remoteWorkHeading{
+        font-size: 3.75rem;
+        line-height: 1; }
+}
+@media(min-width:768px) {
+    .sectionDiv{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        place-items: center;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem;
+    }
+    .partnerImg{
+        width: 6rem;
+    }
+    .article{
+        margin-top: 0;
+        text-align: left;
+        max-width: 400px;
+        margin-right: auto;
+    }
+
+    .unorderedListPartner{
+        margin-top: 5rem;
+    }
+}

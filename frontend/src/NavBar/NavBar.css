@@ -1,0 +1,111 @@
+.header{
+    display: flex;
+    padding: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.chevron{
+    margin-left: 0.5rem;
+}
+
+.loginRegisterDiv{
+    display: none;
+}
+
+.loginButton{
+    margin-right: 2.5rem;
+}
+
+.registerButton{
+    padding: 0.5rem 1rem;
+    border-radius: .6rem;
+    outline: none;
+    border: 2px solid rgb(104, 102, 102);
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.registerButton:hover{
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.unorderedList{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.unorderedList > * + *{
+    margin-top: 1rem;
+}
+
+.listItem{
+    display: flex;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.button{
+    border: none;
+    display: inline-block;
+    outline: none;
+    color: rgb(104, 102, 102);
+    transition: all .3s;
+    cursor: pointer;
+}
+.button:hover{
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-button {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+.dropdown-button span {
+    margin-right: .2rem;
+}
+.dropdown-button.active {
+    color: #000;
+}
+
+.imgItem{
+    margin-right: 0.5rem;
+}
+
+.nav-item {
+    margin-bottom: 1.2rem;
+}
+
+@media(min-width:1024px) {
+    .headerDiv {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .imgHeader{
+        margin-right: 3rem;
+    }
+    .unorderedList{
+        margin-left: 0px;
+        background: white;
+        margin-top: 0.7rem;
+        border-radius: 0.3rem;
+        padding: 1rem 2rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .hidden{display: none;}
+    .loginRegisterDiv{
+        display:block;
+    }
+
+    .nav-item {
+        margin-bottom: 0;
+    }
+}
+
